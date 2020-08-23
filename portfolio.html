@@ -14,7 +14,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <div class="header-portfolio container">
+    <div class="header-portfolio">
       <header class="header container">
         <nav class="navigation">
           <a class="navigation-logo link" href="./index.html"
@@ -37,19 +37,24 @@
             </li>
           </ul>
         </nav>
+
         <div class="header-utils">
           <address class="header-address">
-            <svg class="header-address-svg-mail">
-              <use href="./img/icons/sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="header-address-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a
+              class="header-address-mail link"
+              href="mailto:info@devstudio.com"
             >
-            <svg class="header-address-svg-tele">
-              <use href="./img/icons/sprite.svg#icon-tele"></use>
-            </svg>
-            <a class="header-address-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              <svg class="header-address-svg-mail" width="16" height="11">
+                <use href="./img/icons/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+
+            <a class="header-address-tel link" href="tel:+380961111111">
+              <svg class="header-address-svg-tele" width="10" height="15">
+                <use href="./img/icons/sprite.svg#icon-tele"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </address>
         </div>
@@ -91,12 +96,22 @@
         <h2 hidden>галерея примеров работ</h2>
         <ul class="example-gallery list">
           <li class="example-gallery-item">
-            <img
-              src="./img/portfolio/img.jpg"
-              alt="Ноутбук с макетом веб-сайта"
-              width="370"
-              height="294"
-            />
+            <div class="example-gallery-item-img">
+              <img
+                src="./img/portfolio/img.jpg"
+                alt="Ноутбук с макетом веб-сайта"
+                width="370"
+                height="294"
+              />
+              <div class="gallery-item-overlay">
+                <p class="gallery-item-overlay-title">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </div>
+            </div>
+
             <div class="advantages-list-item-signature">
               <h3 class="advantages-title">Технокряк</h3>
               <p class="advantages-list-item">Веб-сайт</p>
